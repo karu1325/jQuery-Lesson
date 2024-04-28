@@ -37,3 +37,18 @@ puts count_number(7777777)
 (1..5).each do |num|
   puts num
 end
+
+def divisor(num)
+  result = []
+  i = 1
+  while i <= num do
+    remainder = num % i
+    if remainder == 0
+      result << i
+    end
+    i += 1
+  end
+  return result
+end
+
+puts divisor(24)
