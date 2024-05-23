@@ -5,12 +5,20 @@ public class test {
     for (String name:names) {
       System.out.println("Hello" + name);
     }
-    num();
+    num(3);
   }
 
-  public static void num() {
-    for (int i = 1; i <= 5; i++) {
-      System.out.println(i);
+  public static void num(int number) {
+    switch (number) {
+      case 1:
+        System.out.println("大吉");
+        break;
+      case 2:
+        System.out.println("吉");
+        break;
+      default:
+        System.out.println("凶");
+        break;
     }
   }
 }
