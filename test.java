@@ -2,10 +2,13 @@ public class test {
 
   public static void main(String[] args) {
     String[] names = {"Bob", "John", "Lily"};
-    for (String name:names) {
-      System.out.println("Hello" + name);
-    }
-    num(3);
+      for (String name:names) {
+        System.out.println("Hello" + name);
+      }
+      num(3);
+      for (int i = 0; i < names.length; i++) {
+        System.out.println(names[i]);
+      }
   }
 
   public static void num(int number) {
