@@ -1,27 +1,28 @@
+import java.util.Scanner;
+import java.util.Random;
+
 public class test {
-
   public static void main(String[] args) {
-    String[] names = {"Bob", "John", "Lily"};
-      for (String name:names) {
-        System.out.println("Hello" + name);
-      }
-      num(3);
-      for (int i = 0; i < names.length; i++) {
-        System.out.println(names[i]);
-      }
-  }
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("グー: 1, チョキ: 2, パー: 3 のいずれかの数字を入力してください: ");
+    String user = scanner.next();
+    System.out.println("あなたは" + user + "をだしました");
 
-  public static void num(int number) {
-    switch (number) {
+    Random random = new Random();
+
+    int cpu = random.nextInt(3) + 1; //1-3からランダムな数字を出力
+    switch (cpu) {
       case 1:
-        System.out.println("大吉");
+        System.out.println("CPUはグーをだしました");
         break;
       case 2:
-        System.out.println("吉");
+        System.out.println("CPUはチョキをだしました");
         break;
-      default:
-        System.out.println("凶");
+      case 3:
+        System.out.println("CPUはパーをだしました");
         break;
     }
+
+    String judge =
   }
 }
